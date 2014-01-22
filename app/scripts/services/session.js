@@ -1,6 +1,6 @@
 'use strict';
 
 angular.module('genAppApp')
-  .factory('Session', function ($resource) {
-    return $resource('/api/session/');
-  });
+    .factory('Session', function ($resource) {
+        return $resource('/api/session/');
+    });
