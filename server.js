@@ -16,8 +16,6 @@ process.env.NODE_ENV = process.env.NODE_ENV || 'development';
 var config = require('./lib/config/config');
 
 
-// Populate empty DB with sample data
-require('./lib/config/dummydata');
   
 // Passport Configuration
 require('./lib/config/passport')();
