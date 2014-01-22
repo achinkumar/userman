@@ -1,9 +1,9 @@
 'use strict';
 
-var express = require('express'),
-    path = require('path'),
-    fs = require('fs'),
-    config = require('./lib/config/config');
+var express = require('express');
+var path = require('path');
+var fs = require('fs');
+var config = require('./lib/config/config');
 
 /**
  * Main application file
@@ -16,7 +16,7 @@ process.env.NODE_ENV = process.env.NODE_ENV || 'development';
 var config = require('./lib/config/config');
 
 
-  
+
 // Passport Configuration
 require('./lib/config/passport')();
 
@@ -30,7 +30,7 @@ require('./lib/routes')(app);
 
 // Start server
 app.listen(config.port, function () {
-  console.log('Express server listening on port %d in %s mode', config.port, app.get('env'));
+    console.log('Express server listening on port %d in %s mode', config.port, app.get('env'));
 });
 
 // Expose app
